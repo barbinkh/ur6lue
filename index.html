@@ -527,7 +527,7 @@ $ <b>python3 autoqsl.py --lookup N0CALL</b>   # which e-mail would be used</pre>
         <thead><tr><th data-i18n="th.platform">Platform</th><th data-i18n="th.file">File</th><th class="hide" data-i18n="th.req">Requirements</th></tr></thead>
         <tbody>
           <tr><td><span class="os">macOS</span></td><td><a data-file="QSLauto-{v}-arm64.dmg" href="#">QSLauto-<span class="ver">1.0.0</span>-arm64.dmg</a> <span class="req">Apple Silicon</span><br><a data-file="QSLauto-{v}.dmg" href="#">QSLauto-<span class="ver">1.0.0</span>.dmg</a> <span class="req">Intel</span></td><td class="hide req" data-i18n="req.mac">macOS 12 Monterey or newer</td></tr>
-          <tr><td><span class="os">Windows</span></td><td><a data-file="QSLauto Setup {v}.exe" href="#">QSLauto Setup <span class="ver">1.0.0</span>.exe</a></td><td class="hide req" data-i18n="req.win">Windows 10 / 11, 64-bit</td></tr>
+          <tr><td><span class="os">Windows</span></td><td><a data-file="QSLauto.Setup.{v}.exe" href="#">QSLauto.Setup.<span class="ver">1.0.0</span>.exe</a></td><td class="hide req" data-i18n="req.win">Windows 10 / 11, 64-bit</td></tr>
           <tr><td><span class="os">Linux</span></td><td><a data-file="QSLauto-{v}.AppImage" href="#">QSLauto-<span class="ver">1.0.0</span>.AppImage</a><br><a data-file="autoqsl-desktop_{v}_amd64.deb" href="#">autoqsl-desktop_<span class="ver">1.0.0</span>_amd64.deb</a></td><td class="hide req" data-i18n="req.linux">glibc 2.31+, x64</td></tr>
           <tr><td><span class="os" data-i18n="os.script">Script</span></td><td><a class="script-link" href="#">autoqsl.py + start_autoqsl.command</a></td><td class="hide req" data-i18n="req.script">Python 3.9+, macOS / Linux / Windows</td></tr>
         </tbody>
@@ -674,7 +674,7 @@ $ <b>python3 autoqsl.py --lookup N0CALL</b>   # which e-mail would be used</pre>
       var o = a.getAttribute('data-os');
       if (o !== os) return;
       if (o === 'mac') a.href = base + '/releases/latest/download/QSLauto-' + VERSION + '-arm64.dmg';
-      if (o === 'win') a.href = base + '/releases/latest/download/' + encodeURIComponent('QSLauto Setup ' + VERSION + '.exe');
+      if (o === 'win') a.href = base + '/releases/latest/download/' + 'QSLauto.Setup.' + VERSION + '.exe';
       if (o === 'linux') a.href = base + '/releases/latest/download/QSLauto-' + VERSION + '.AppImage';
     });
   }
